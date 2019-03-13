@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service BetOrder {
+	rpc Close(CloseRequest) returns (CloseResponse) {}
+}
+
+message CloseRequest {
+	int32 roomid = 1;
+	int32 orderid = 2;
+}
+
+message CloseResponse {
+	string txhash = 2;
+}
