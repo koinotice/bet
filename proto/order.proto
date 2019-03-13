@@ -5,8 +5,8 @@ service BetOrder {
 }
 
 message CloseRequest {
-	int32 roomid = 1;
-	int32 orderid = 2;
+	int64 roomid = 1;
+	int64 orderid = 2;
 }
 
 message CloseResponse {
